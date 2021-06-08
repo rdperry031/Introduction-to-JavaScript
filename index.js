@@ -19,6 +19,15 @@ Do the following:
 */
 
 
+// 1. 
+let votingAge=18;
+
+// 2. 
+if(votingAge>=18){
+  console.log('true');
+}
+
+
 
 /*
 Task 1b - Values
@@ -30,8 +39,14 @@ Do the following:
 
    HINT: no function required
 */
+// 1.
+let variableOne= 1;
+let variableTwo= 7;
+// 2.
+variableOne= variableOne/variableTwo;
 
-
+// 3.
+console.log(variableOne);
 
 
 
@@ -45,9 +60,14 @@ Do the following:
 
    HINT: look up the Number method
 */
+// 1.
+let stringTypeVariable = '1999';
 
+// 2.
+stringTypeVariable = 1999;
 
-
+// 3.
+console.log(stringTypeVariable);
 
 /*
 Task 1d - Multiply
@@ -58,10 +78,10 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
+function multiply(a,b){
+    console.log(a*b);
   }
-
+multiply()
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -74,9 +94,10 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-    /*add your code here*/
+function dogYears(age){
+    console.log(age*7);
 }
+dogYears(5)
 
 
 
@@ -149,9 +170,29 @@ Use the game function below to do the following:
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
-function game(user, computer){
-    /*add your code here*/
-}
+function game(user, computer,){
+  let choiceOne=Math.floor(Math.random()*3);
+ let choiceTwo=Math.floor(Math.random()*3);
+  
+  
+  let outcomes=['Scissors', 'Rock', 'Paper'];
+  user=(outcomes[choiceOne]);
+  computer=(outcomes[choiceTwo]);
+  
+  
+  if(user === 'Scissors' && computer==='Paper'){
+    return'you win!';
+  }else if(user === 'Paper'&& computer ==='Rock'){
+    return 'you win!';
+  }else if(user==='Rock' && computer ==='Scissors'){
+    return 'you win!';
+  }else if(user===computer){
+    return "it's a tie!";
+  }else{
+    return 'you lose!';
+  }
+  
+ }
   
   
 
