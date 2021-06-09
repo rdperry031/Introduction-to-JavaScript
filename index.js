@@ -171,9 +171,9 @@ Use the game function below to do the following:
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
-let choice=Math.floor(Math.random()*3);
+// let choice=Math.floor(Math.random()*3);
 function game(user, computer){
- console.log(choice);
+//  console.log(choice);
   // let choice=Math.floor(Math.random()*3);
   // let outcomes=['scissors', 'rock', 'paper'];
   console.log("before",computer);
@@ -212,8 +212,9 @@ Using the miles function below do the following:
   3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-    /*add your code here*/
+function miles(){
+  let km=10   
+  return km * .621371
   }
 
 
@@ -226,8 +227,9 @@ Using the feet function below do the following:
   3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-    /*add your code here*/
+function feet(){
+    let cm= 160
+    return cm / 30.48 
   }
  
 
@@ -242,8 +244,9 @@ Using the annoyingSong function below do the following:
       "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
-        /*add your code here*/
+function annoyingSong(x){
+    for(let i = x; i > 0; i--)
+    return(`${i} bottles of soda on the wall, ${i} bottles of soda, take one down pass it around ${i - 1} bottles of soda on the wall`);
   }
 
 
@@ -262,8 +265,18 @@ Using the grade function below do the following:
    below should return 'you got an F'
 */
   
-function grade(/*Your Code here */){
-  /*Your Code here */
+function grade(scale){
+      if(scale >=90){
+        return 'you got an A';
+      }else if(scale>=80&& scale<=89){
+        return 'you got a B';
+      }else if(scale >=70&&scale<=79){
+        return 'you got a C';
+      }else if (scale>=60&&scale<=69){
+        return 'you got a D'
+      }else{
+        return 'you got an F'
+      }
   }
   
   
