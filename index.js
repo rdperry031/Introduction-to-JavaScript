@@ -78,10 +78,11 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(a,b){
-    console.log(a*b);
+function multiply(a, b){
+    let product = (a * b);
+    return product
   }
-multiply()
+
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -95,9 +96,9 @@ Do the following:
 */
 
 function dogYears(age){
-    console.log(age*7);
+  let humanYears = (age) * 7;  
+  return humanYears
 }
-dogYears(5)
 
 
 
@@ -170,29 +171,33 @@ Use the game function below to do the following:
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
-function game(user, computer,){
-  let choiceOne=Math.floor(Math.random()*3);
- let choiceTwo=Math.floor(Math.random()*3);
-  
-  
-  let outcomes=['Scissors', 'Rock', 'Paper'];
-  user=(outcomes[choiceOne]);
-  computer=(outcomes[choiceTwo]);
-  
-  
-  if(user === 'Scissors' && computer==='Paper'){
-    return'you win!';
-  }else if(user === 'Paper'&& computer ==='Rock'){
-    return 'you win!';
-  }else if(user==='Rock' && computer ==='Scissors'){
-    return 'you win!';
+let choice=Math.floor(Math.random()*3);
+function game(user, computer){
+ console.log(choice);
+  // let choice=Math.floor(Math.random()*3);
+  // let outcomes=['scissors', 'rock', 'paper'];
+  console.log("before",computer);
+  // computer=outcomes[choice];
+  console.log(computer);
+  // console.log(user);
+  // console.log(computer);
+  if(user === 'scissors' && computer==='paper'){
+    return'you win!'
+  }else if(user === 'paper'&& computer ==='rock'){
+    return 'you win!'
+  }else if(user ==='rock' && computer ==='scissors'){
+    return 'you win!'
   }else if(user===computer){
-    return "it's a tie!";
+    return "it's a tie"
   }else{
-    return 'you lose!';
+    return 'you lose!'
   }
+  // if(user==='rock'&&computer==='scissors'){
+  //         return 'you win!';
+  // }
   
  }
+
   
   
 
